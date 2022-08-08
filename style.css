@@ -20,6 +20,10 @@
   color: white;
 }
 
+.container h2{
+  font-size: 5rem;
+}
+
 /* Animating gradient */
 
 @keyframes bg-animations{
@@ -33,7 +37,9 @@
 
 .stopwatch{
   background-color: rgba(0, 0, 0, 0.329);
-  height: 50vh;
+  height: 45vh;
+  
+  padding: 30px;
   width: 40vw;
   display: flex;
   align-items: center;
@@ -77,5 +83,40 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+  .container h2{
+    font-size: 4rem;
+  }
+  .stopwatch-display h1{
+    
+    font-size: 6rem;
+  }
+  .stopwatch{
+    width: 70%;
+    
+  }
+  .stopwatch-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
-
+@media only screen and (max-width: 600px){
+  .container h2{
+    font-size: 3rem;
+  }
+  .stopwatch-display h1{
+    
+    font-size: 4.5rem;
+  }
+  .stopwatch{
+    width: 70%;
+    
+  }
+  .stopwatch-action button{
+    padding: 14px 35px;
+    font-size: 1.5rem;
+  }
+}
