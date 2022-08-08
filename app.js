@@ -20,7 +20,7 @@ let int = null;
 
 //starting the timer - sec count will be zero and clearInterval condition will be false in the start
 start.addEventListener('click', startTimer = () => {
-  isPaused = false;
+  
   //console.log(int!==null);
   if(int!==null){
     clearInterval(int);
@@ -84,8 +84,12 @@ function displayMinutes() {
     min.innerHTML = minCount;
   }
 
-  if(minCount === 05){
-    console.log('Time limit exceeded!')
+  if(minCount === 60){
+    clearInterval(int);
+    sec.innerHTML = '00';
+    min.innerHTML = '00';
+    secCount = 0;
+    minCount = 0;
     
   }
 
