@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.container{
+  height: 100vh;
+  background-image: linear-gradient(43deg, #47f2ab 0%, #2fa8dc 46%, #156aea 100%);
+  background-size:250%;
+  animation: bg-animations 5s infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+
+/* Animating gradient */
+
+@keyframes bg-animations{
+  0%{
+    background-postion:left;
+  }
+  100%{
+    background-position:right;
+  }
+}
+
+.stopwatch{
+  background-color: rgba(0, 0, 0, 0.329);
+  height: 50vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+.stopwatch-display h1{
+  color: white;
+  font-size: 7rem;
+}
+
+.stopwatch-action button{
+  background-image: linear-gradient(to right, #F7971E 0%, #FFD200  51%, #F7971E  100%);
+  margin: 10px;
+  padding: 14px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white; 
+  font-size: 1.5rem;           
+  font-weight: 500;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  
+}
+
+.stopwatch-action button:hover{
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.stopwatch-action .stopwatch-reset{
+  background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a  51%, #cb2d3e  100%);
+}
+
+
+
+
