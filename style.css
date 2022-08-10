@@ -77,6 +77,10 @@
   text-decoration: none;
 }
 
+.stopwatch-action button:active{
+  transform: scale(1.2);
+}
+
 
 .stopwatch-action .stopwatch-reset{
   background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a  51%, #cb2d3e  100%);
