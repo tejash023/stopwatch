@@ -26,7 +26,7 @@ start.addEventListener('click', startTimer = () => {
     clearInterval(int);
   }
   //console.log('Int Value in Start' + int);
-  int = setInterval(displaySeconds, 1000);
+  int = setInterval(displaySeconds, 500);
   
 })
 
