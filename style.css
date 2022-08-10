@@ -1,3 +1,8 @@
+@font-face{
+  font-family:digital-clock-font;
+  src: url(put_the_location_to_your_font.ttf or .otf);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@
 
 .stopwatch{
   background-color: rgba(0, 0, 0, 0.329);
-  height: 45vh;
+  height: 50vh;
   
   padding: 30px;
   width: 40vw;
@@ -86,7 +91,14 @@
   background-image: linear-gradient(to right, #cb2d3e 0%, #ef473a  51%, #cb2d3e  100%);
 }
 
-
+@media only screen and (max-width: 1279px) {
+  .stopwatch-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media only screen and (max-width: 900px) {
   .container h2{
     font-size: 4rem;
@@ -99,29 +111,19 @@
     width: 70%;
     
   }
-  .stopwatch-action{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  .stopwatch-action button{
+    padding: 14px 40px;
+    font-size: 2rem;
   }
+ 
 }
 
 @media only screen and (max-width: 600px){
-  .container h2{
-    font-size: 3rem;
-  }
-  .stopwatch-display h1{
-    
-    font-size: 4.5rem;
-  }
+  
   .stopwatch{
     height: 60vh;
     width: 80%;
     
   }
-  .stopwatch-action button{
-    padding: 14px 35px;
-    font-size: 1.5rem;
-  }
+  
 }
